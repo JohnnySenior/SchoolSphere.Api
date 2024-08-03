@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSphere.Api", "SchoolSphere.Api\SchoolSphere.Api.csproj", "{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSphere.Api.Tests.Unit", "SchoolSphere.Api.Tests.Unit\SchoolSphere.Api.Tests.Unit.csproj", "{F5C34622-2F29-40AA-B17F-445EA986B515}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C34622-2F29-40AA-B17F-445EA986B515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C34622-2F29-40AA-B17F-445EA986B515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C34622-2F29-40AA-B17F-445EA986B515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C34622-2F29-40AA-B17F-445EA986B515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
