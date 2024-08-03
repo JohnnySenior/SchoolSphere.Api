@@ -1,0 +1,6 @@
+@SchoolSphere.Api_HostAddress = http://localhost:5002
+
+GET {{SchoolSphere.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
