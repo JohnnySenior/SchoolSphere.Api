@@ -12,3 +12,4 @@ namespace SchoolSphere.Api.Controllers
             "Hello Mario, Princess is in another castle.";
     }
 }
+
