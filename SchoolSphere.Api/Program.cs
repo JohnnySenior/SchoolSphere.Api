@@ -2,6 +2,8 @@
 // Copyright (c) The Standard Organization: A coalition of the Good-Hearted Engineers
 // ----------------------------------------------------------------------------------
 
+using SchoolSphere.Api.Brokers.Storages;
+
 namespace SchoolSphere.Api
 {
     public class Program
@@ -13,6 +15,8 @@ namespace SchoolSphere.Api
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<StorageBroker>();
+            RegisterBrokers(builder);
 
             var app = builder.Build();
 
@@ -26,6 +30,11 @@ namespace SchoolSphere.Api
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
+        }
+
+        private static void RegisterBrokers(WebApplicationBuilder builder)
+        {
+            builder.Services.AddTransient<IStorageBroker, StorageBroker>();
         }
     }
 }
