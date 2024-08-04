@@ -2,6 +2,7 @@
 // Copyright (c) The Standard Organization: A coalition of the Good-Hearted Engineers
 // ----------------------------------------------------------------------------------
 
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
@@ -18,5 +19,8 @@ namespace SchoolSphere.Api.Brokers.Storages
 
         public ValueTask<IQueryable<Student>> SelectAllStudentsAsync() =>
             SelectAllAsync<Student>();
+
+        public ValueTask<Student> SelectStudentByIdAsync(Guid studentId) =>
+            SelectAsync<Student>(studentId);
     }
 }
