@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSphere.Api", "SchoolSphere.Api\SchoolSphere.Api.csproj", "{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolSphere.Api", "SchoolSphere.Api\SchoolSphere.Api.csproj", "{1A3DEA52-7F16-4AB0-8E13-2EFE6847318D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSphere.Api.Tests.Unit", "SchoolSphere.Api.Tests.Unit\SchoolSphere.Api.Tests.Unit.csproj", "{F5C34622-2F29-40AA-B17F-445EA986B515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolSphere.Api.Tests.Acceptence", "SchoolSphere.Api.Tests.Acceptence\SchoolSphere.Api.Tests.Acceptence.csproj", "{2F699437-5A2A-4F28-9C1E-E31BF549F995}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F5C34622-2F29-40AA-B17F-445EA986B515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C34622-2F29-40AA-B17F-445EA986B515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5C34622-2F29-40AA-B17F-445EA986B515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F699437-5A2A-4F28-9C1E-E31BF549F995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F699437-5A2A-4F28-9C1E-E31BF549F995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F699437-5A2A-4F28-9C1E-E31BF549F995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F699437-5A2A-4F28-9C1E-E31BF549F995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
