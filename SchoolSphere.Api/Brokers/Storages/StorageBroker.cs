@@ -4,6 +4,7 @@
 
 using EFxceptions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace SchoolSphere.Api.Brokers.Storages
 {
