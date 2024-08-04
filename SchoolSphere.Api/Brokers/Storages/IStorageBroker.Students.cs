@@ -15,5 +15,6 @@ namespace SchoolSphere.Api.Brokers.Storages
         ValueTask<IQueryable<Student>> SelectAllStudentsAsync();
         ValueTask<Student> SelectStudentByIdAsync(Guid studentId);
         ValueTask<Student> UpdateStudentAsync(Student student);
+        ValueTask<Student> DeleteStudentAsync(Student student);
     }
 }
