@@ -2,6 +2,7 @@
 // Copyright (c) The Standard Organization: A coalition of the Good-Hearted Engineers
 // ----------------------------------------------------------------------------------
 
+using SchoolSphere.Api.Brokers.Loggings;
 using SchoolSphere.Api.Brokers.Storages;
 
 namespace SchoolSphere.Api
@@ -35,6 +36,7 @@ namespace SchoolSphere.Api
         private static void RegisterBrokers(WebApplicationBuilder builder)
         {
             builder.Services.AddTransient<IStorageBroker, StorageBroker>();
+            builder.Services.AddTransient<ILoggingBroker, LoggingBroker>();
         }
     }
 }
