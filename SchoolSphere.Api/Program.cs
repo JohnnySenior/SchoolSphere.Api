@@ -5,6 +5,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SchoolSphere.Api.Brokers.DateTimes;
 using SchoolSphere.Api.Brokers.Loggings;
 using SchoolSphere.Api.Brokers.Storages;
 
@@ -40,6 +41,7 @@ namespace SchoolSphere.Api
         {
             builder.Services.AddTransient<IStorageBroker, StorageBroker>();
             builder.Services.AddTransient<ILoggingBroker, LoggingBroker>();
+            builder.Services.AddTransient<IDateTimeBroker, DateTimeBroker>();
         }
     }
 }
