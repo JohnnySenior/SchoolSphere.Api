@@ -22,5 +22,8 @@ namespace SchoolSphere.Api.Brokers.Storages
 
         public ValueTask<Student> SelectStudentByIdAsync(Guid studentId) =>
             SelectAsync<Student>(studentId);
+
+        public ValueTask<Student> UpdateStudentAsync(Student student) =>
+            UpdateAsync(student);
     }
 }
