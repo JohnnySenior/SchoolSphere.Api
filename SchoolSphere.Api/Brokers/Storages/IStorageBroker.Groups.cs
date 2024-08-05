@@ -15,5 +15,6 @@ namespace SchoolSphere.Api.Brokers.Storages
         ValueTask<IQueryable<Group>> SelectAllGroupsAsync();
         ValueTask<Group> SelectGroupByIdAsync(Guid groupId);
         ValueTask<Group> UpdateGroupAsync(Group group);
+        ValueTask<Group> DeleteGroupAsync(Group group);
     }
 }
