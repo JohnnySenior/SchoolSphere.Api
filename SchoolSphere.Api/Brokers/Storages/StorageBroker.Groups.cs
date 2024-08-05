@@ -25,5 +25,8 @@ namespace SchoolSphere.Api.Brokers.Storages
 
         public ValueTask<Group> UpdateGroupAsync(Group group) =>
             UpdateAsync(group);
+
+        public ValueTask<Group> DeleteGroupAsync(Group group) =>
+            DeleteAsync(group);
     }
 }
