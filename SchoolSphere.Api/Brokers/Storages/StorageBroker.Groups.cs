@@ -22,5 +22,8 @@ namespace SchoolSphere.Api.Brokers.Storages
 
         public ValueTask<Group> SelectGroupByIdAsync(Guid groupId) =>
             SelectAsync<Group>(groupId);
+
+        public ValueTask<Group> UpdateGroupAsync(Group group) =>
+            UpdateAsync(group);
     }
 }

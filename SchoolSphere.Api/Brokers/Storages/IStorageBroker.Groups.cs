@@ -14,5 +14,6 @@ namespace SchoolSphere.Api.Brokers.Storages
         ValueTask<Group> InsertGroupAsync(Group group);
         ValueTask<IQueryable<Group>> SelectAllGroupsAsync();
         ValueTask<Group> SelectGroupByIdAsync(Guid groupId);
+        ValueTask<Group> UpdateGroupAsync(Group group);
     }
 }
