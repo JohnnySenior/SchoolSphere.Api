@@ -27,6 +27,6 @@ namespace SchoolSphere.Api.Services.Foundations.Students
         }
 
         public ValueTask<Student> AddStudentAsync(Student student) =>
-            throw new System.NotImplementedException();
+            this.storageBroker.InsertStudentAsync(student);
     }
 }

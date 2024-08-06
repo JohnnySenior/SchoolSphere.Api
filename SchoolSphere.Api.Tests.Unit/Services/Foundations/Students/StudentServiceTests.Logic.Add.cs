@@ -21,7 +21,8 @@ namespace SchoolSphere.Api.Tests.Unit.Services.Foundations.Students
             Student expectedStudent = storedStudent;
 
             this.storageBrokerMock.Setup(broker =>
-                broker.InsertStudentAsync(inputStudent));
+                broker.InsertStudentAsync(inputStudent))
+                    .ReturnsAsync(storedStudent);
 
             // when
             Student actualStudent =
